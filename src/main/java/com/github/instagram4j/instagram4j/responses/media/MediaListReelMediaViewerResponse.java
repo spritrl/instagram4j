@@ -10,12 +10,12 @@ import lombok.Data;
 @Data
 public class MediaListReelMediaViewerResponse extends IGResponse implements IGPaginatedResponse {
     private List<Profile> users;
-    private String next_max_id;
+    private String next_min_id;
     private int user_count;
     private int total_viewer_count;
     private ReelMedia updated_media;
 
     public boolean isMore_available() {
-        return next_max_id != null;
+        return next_min_id != null;
     }
 }

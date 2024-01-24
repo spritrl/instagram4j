@@ -10,7 +10,7 @@ public class FeedIterator<T extends IGRequest<R> & IGPaginatedRequest, R extends
         extends CursorIterator<IGRequest<R>, R> {
 
     public FeedIterator(IGClient client, T t) {
-        super(client, t, (request, id) -> t.setMax_id(id), (e) -> e.getNext_max_id(), (e) -> e.isMore_available());
+        super(client, t, (request, id) -> t.setMax_id(id), (e) -> e.getNext_min_id(), (e) -> e.isMore_available());
     }
 
 }

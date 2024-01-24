@@ -10,7 +10,7 @@ public class MediaGetStoryQuestionResponsesResponse extends IGResponse implement
     private ResponderInfo responder_info;
 
     @Override
-    public String getNext_max_id() {
+    public String getNext_min_id() {
         return this.responder_info.getMax_id();
     }
 

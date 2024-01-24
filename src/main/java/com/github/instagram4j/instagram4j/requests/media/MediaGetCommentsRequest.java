@@ -26,7 +26,12 @@ public class MediaGetCommentsRequest extends IGGetRequest<MediaGetCommentsRespon
 
     @Override
     public String getQueryString(IGClient client) {
-        return mapQueryString("max_id", max_id);
+        if (max_id != null) {
+            String queryString = "?min_id=" + max_id;
+            return queryString;
+        } else {
+            return "";
+        }
     }
 
     @Override

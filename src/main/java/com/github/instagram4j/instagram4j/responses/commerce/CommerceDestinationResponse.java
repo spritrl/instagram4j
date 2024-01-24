@@ -10,6 +10,6 @@ import lombok.Data;
 public class CommerceDestinationResponse extends IGResponse implements IGPaginatedResponse {
     private List<SectionalMediaGridItem> sectional_items;
     private String rank_token;
-    private String next_max_id;
+    private String next_min_id;
     private boolean more_available;
 }

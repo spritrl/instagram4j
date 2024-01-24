@@ -12,6 +12,6 @@ public class IgtvBrowseFeedResponse extends IGResponse implements IGPaginatedRes
     private Channel my_channel;
     private List<Channel> channels;
     @JsonProperty("max_id")
-    private String next_max_id;
+    private String next_min_id;
     private boolean more_available;
 }

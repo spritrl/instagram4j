@@ -11,9 +11,9 @@ import lombok.Data;
 public class MediaGetCommentsResponse extends IGResponse implements IGPaginatedResponse {
     private List<Comment> comments;
     private Caption caption;
-    private String next_max_id;
+    private String next_min_id;
 
     public boolean isMore_available() {
-        return next_max_id != null;
+        return next_min_id != null;
     }
 }

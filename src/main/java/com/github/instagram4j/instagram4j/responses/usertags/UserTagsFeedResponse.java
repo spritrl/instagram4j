@@ -14,7 +14,7 @@ public class UserTagsFeedResponse extends IGResponse implements IGPaginatedRespo
 	private List<TimelineMedia> items;
 	
 	private int num_results;
-	private String next_max_id;
+	private String next_min_id;
 	private boolean more_available;
 	
 	

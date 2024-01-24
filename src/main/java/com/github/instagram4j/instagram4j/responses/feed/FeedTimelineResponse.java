@@ -15,7 +15,7 @@ import lombok.Data;
 public class FeedTimelineResponse extends IGResponse implements IGPaginatedResponse {
     private boolean auto_load_more_enabled;
     private int num_results;
-    private String next_max_id;
+    private String next_min_id;
     @JsonDeserialize(converter = FilterToIGTimelineMedia.class)
     private List<TimelineMedia> feed_items;
     private boolean more_available;

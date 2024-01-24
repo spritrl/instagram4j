@@ -16,6 +16,6 @@ public class FeedLocationResponse extends IGResponse implements IGPaginatedRespo
     private Location location;
     private int num_results;
     private int media_count;
-    private String next_max_id;
+    private String next_min_id;
     private boolean more_available;
 }

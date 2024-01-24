@@ -10,7 +10,7 @@ public class MediaGetStoryPollVotersResponse extends IGResponse implements IGPag
     private VoterInfo voter_info;
 
     @Override
-    public String getNext_max_id() {
+    public String getNext_min_id() {
         return voter_info.getMax_id();
     }
 

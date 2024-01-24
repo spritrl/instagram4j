@@ -12,6 +12,6 @@ public class DiscoverTopicalExploreResponse extends IGResponse implements IGPagi
     private List<SectionalItem> sectional_items;
     private String rank_token;
     private List<Cluster> clusters;
-    private String next_max_id;
+    private String next_min_id;
     private boolean more_available;
 }

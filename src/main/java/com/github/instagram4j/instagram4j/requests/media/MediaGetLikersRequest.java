@@ -10,10 +10,16 @@ import lombok.RequiredArgsConstructor;
 public class MediaGetLikersRequest extends IGGetRequest<FeedUsersResponse> {
     @NonNull
     private String _id;
+    private String nextMinId;
+
+    public MediaGetLikersRequest(String _id, String nextMinId) {
+        this._id = _id;
+        this.nextMinId = nextMinId;
+    }
 
     @Override
     public String path() {
-        return "media/" + _id + "/likers/";
+        return nextMinId == null ? "media/" + _id + "/likers/" : "media/" + _id + "/likers/?max_id=" + nextMinId;
     }
 
     @Override

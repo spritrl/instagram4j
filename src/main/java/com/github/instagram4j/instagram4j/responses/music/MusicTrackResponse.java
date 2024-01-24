@@ -14,8 +14,8 @@ public class MusicTrackResponse extends IGResponse implements IGPaginatedRespons
     private List<MusicTrack> items;
     private MusicTrackPageInfo page_info;
 
-    public String getNext_max_id() {
-        return page_info.getNext_max_id();
+    public String getNext_min_id() {
+        return page_info.getNext_min_id();
     }
 
     public boolean isMore_available() {
@@ -24,7 +24,7 @@ public class MusicTrackResponse extends IGResponse implements IGPaginatedRespons
 
     @Data
     public static class MusicTrackPageInfo {
-        private String next_max_id;
+        private String next_min_id;
         private boolean more_available;
     }
 }

@@ -12,6 +12,6 @@ public class IgtvChannelResponse extends IGResponse implements IGPaginatedRespon
     @JsonUnwrapped
     private Channel channel;
     @JsonProperty("max_id")
-    private String next_max_id;
+    private String next_min_id;
     private boolean more_available;
 }

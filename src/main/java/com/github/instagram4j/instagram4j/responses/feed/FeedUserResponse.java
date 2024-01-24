@@ -9,10 +9,10 @@ import lombok.Data;
 @Data
 public class FeedUserResponse extends IGResponse implements IGPaginatedResponse {
     private List<TimelineMedia> items;
-    private String next_max_id;
+    private String next_min_id;
     private int num_results;
 
     public boolean isMore_available() {
-        return next_max_id != null;
+        return next_min_id != null;
     }
 }
